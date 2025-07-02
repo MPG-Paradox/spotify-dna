@@ -24,6 +24,10 @@ npm start
 
 The React app will proxy API requests to the Flask backend running on port 5000.
 
+4. Visit `http://localhost:3000` and click **Login with Spotify** to authorize access.
+   After authentication the dashboard will display your top artists, tracks, a summary of your
+   listening habits, and tools to generate playlists.
+
 ## Docker
 
 Build and run the full stack using Docker:
@@ -34,4 +38,8 @@ docker run -p 5000:5000 --env-file backend/.env spotify-dna
 ```
 
 This builds the React frontend and serves it via Flask in a single container.
+
+## Environment variables
+
+Create a `.env` file under `backend/` with your Spotify API credentials and optional `OPENAI_API_KEY`. See `.env.example` for all available variables.
 
