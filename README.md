@@ -12,7 +12,9 @@ cd backend
 python app.py
 ```
 
-The app will auto-install requirements on first run.
+The app will auto-install requirements on first run and compile Python files.
+On Windows you may see a warning like `Can't list ... python*.zip` during this
+compile step. As long as no other errors appear, you can safely ignore it.
 
 3. In another terminal install frontend deps and start React dev server:
 
