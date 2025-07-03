@@ -2,4 +2,4 @@ from flask import Blueprint
 
 bp = Blueprint('spotify', __name__)
 
-from . import auth, ingest, recommend, generate  # noqa: F401
+from . import auth, ingest, recommend, generate, analysis  # noqa: F401
